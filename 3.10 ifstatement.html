@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if-statement</title>
+</head>
+<body>
+
+    <p>Wie lautet das Zauberwort: </br></p>
+
+
+    <p><input type="text" id="magic"></p>
+
+    <p><button id="check">CHECK</button></p>
+
+
+    <script type="text/javascript">
+
+
+
+
+        document.getElementById("check").onclick = function () {
+
+            var zauberWort = "Abrakadabra";
+            var testWort = document.getElementById("magic").value;
+
+            if(testWort == zauberWort) {
+
+                alert("Herzlichen Glückwunsch")
+
+            }else {
+
+                alert("Leider ist das nicht richtig!!!")
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>

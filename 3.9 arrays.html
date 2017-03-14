@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>arrays</title>
+</head>
+<body>
+
+    <input type="text" id="inhalt">
+    <button id="tweets">Tweet hinzufügen</button>
+
+    <script type="text/javascript">
+
+        var myArray = new Array();
+        myArray[0] = "Pizza";
+        myArray[1] = "Schokolade";
+
+        myArray.splice(0,0, "Hallo", "wie geht es");
+
+        document.getElementById("tweets").onclick = function () {
+            myArray.push(document.getElementById("inhalt").value) ;
+        }
+
+        console.log(myArray);
+
+
+    </script>
+
+</body>
+</html>

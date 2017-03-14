@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>java script einleitung</title>
+    <style type="text/css">
+
+        .kreis {
+
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 10px;
+
+        }
+
+        #kreis-rot {
+
+            background-color: red;
+
+        }
+
+        #kreis-blau {
+
+            background-color: blue;
+
+        }
+
+        #kreis-gelb {
+
+            background-color: yellow;
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+        <div class="kreis" id="kreis-rot"></div>
+
+        <div class="kreis" id="kreis-blau"></div>
+
+        <div class="kreis" id="kreis-gelb"></div>
+
+        <button id="reset">reset all!</button>
+
+
+    <script type="text/javascript">
+
+        document.getElementById("kreis-rot").onclick = function () {
+
+            document.getElementById("kreis-rot").style.visibility ="hidden";
+        }
+
+        document.getElementById("kreis-blau").onclick = function () {
+
+            document.getElementById("kreis-blau").style.visibility ="hidden";
+        }
+
+        document.getElementById("kreis-gelb").onclick = function () {
+
+            document.getElementById("kreis-gelb").style.visibility ="hidden";
+        }
+
+        document.getElementById("reset").onclick = function () {
+
+            document.getElementById("kreis-gelb").style.visibility ="visible";
+            document.getElementById("kreis-blau").style.visibility ="visible";
+            document.getElementById("kreis-rot").style.visibility ="visible";
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

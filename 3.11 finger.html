@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Wie viele Finger zeige ich: </br></p>
+
+
+    <p><input type="text" id="finger"></p>
+
+    <p><button id="check">CHECK</button></p>
+
+    <script type="text/javascript">
+
+        var min = 1;
+        var max = 5;
+        var x = parseInt(Math.random() * ((max + 1) - min));
+        var eingabe = document.getElementById("finger").value;
+
+
+        document.getElementById("check").onclick = function () {
+
+            if(x == eingabe) {
+
+                alert("Herzlichen Glückwunsch")
+
+            }else {
+
+                alert("Leider ist das nicht richtig!!! Ich habe " + x + " Finger gezeigt")
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
